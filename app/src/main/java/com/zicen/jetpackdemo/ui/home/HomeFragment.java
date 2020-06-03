@@ -13,7 +13,9 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.zicen.jetpackdemo.R;
+import com.zicen.libnavannotation.FragmentDestination;
 
+@FragmentDestination(pageUrl = "main/tabs/home", asStarter = true)
 public class HomeFragment extends Fragment {
 
     private HomeViewModel homeViewModel;
