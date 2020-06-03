@@ -1,0 +1,26 @@
+{
+  "main/tabs/dashboard": {
+    "isFragment": true,
+    "asStarter": false,
+    "needLogin": false,
+    "pageUrl": "main/tabs/dashboard",
+    "className": "com.zicen.jetpackdemo.ui.dashboard.DashboardFragment",
+    "id": 124201031
+  },
+  "main/tabs/home": {
+    "isFragment": true,
+    "asStarter": true,
+    "needLogin": false,
+    "pageUrl": "main/tabs/home",
+    "className": "com.zicen.jetpackdemo.ui.home.HomeFragment",
+    "id": 1942336101
+  },
+  "main/tabs/notification": {
+    "isFragment": true,
+    "asStarter": false,
+    "needLogin": false,
+    "pageUrl": "main/tabs/notification",
+    "className": "com.zicen.jetpackdemo.ui.notifications.NotificationsFragment",
+    "id": 2119905775
+  }
+}
