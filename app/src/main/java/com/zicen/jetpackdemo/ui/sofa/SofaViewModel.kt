@@ -1,10 +1,10 @@
-package com.zicen.jetpackdemo.ui.home
+package com.zicen.jetpackdemo.ui.sofa
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class HomeViewModel : ViewModel() {
+class SofaViewModel : ViewModel() {
 
     private val mText: MutableLiveData<String> = MutableLiveData()
 
@@ -12,6 +12,6 @@ class HomeViewModel : ViewModel() {
         get() = mText
 
     init {
-        mText.value = "This is home fragment"
+        mText.value = "This is sofa fragment"
     }
 }

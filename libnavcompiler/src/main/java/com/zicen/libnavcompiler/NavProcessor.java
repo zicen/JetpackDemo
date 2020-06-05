@@ -37,10 +37,15 @@ import javax.tools.StandardLocation;
  * SupportedSourceVersion注解:声明我们所支持的jdk版本
  * <p>
  * SupportedAnnotationTypes:声明该注解处理器想要处理那些注解
+ *
+ * 这个注解处理器的作用就是找到项目中特定注解标记的类，然后将其加入到一个 Map 中，再讲这个 Map 写到一个 json 配置文件中
+ * 然后 app 就可以根据这个 json 文件来生成对应的 Fragment activity 加入到 navigation 的管理器中
+ *
+ *
  */
 @AutoService(Processor.class)
 @SupportedSourceVersion(SourceVersion.RELEASE_8)
-@SupportedAnnotationTypes({"com.mooc.libnavannotation.FragmentDestination", "com.mooc.libnavannotation.ActivityDestination"})
+@SupportedAnnotationTypes({"com.zicen.libnavannotation.FragmentDestination", "com.zicen.libnavannotation.ActivityDestination"})
 public class NavProcessor extends AbstractProcessor {
     private Messager messager;
     private Filer filer;

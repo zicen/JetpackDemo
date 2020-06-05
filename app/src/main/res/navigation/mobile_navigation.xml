@@ -13,13 +13,13 @@
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="com.zicen.jetpackdemo.ui.dashboard.DashboardFragment"
+        android:name="com.zicen.jetpackdemo.ui.sofa.SofaFragment"
         android:label="@string/title_dashboard"
         tools:layout="@layout/fragment_dashboard" />
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="com.zicen.jetpackdemo.ui.notifications.NotificationsFragment"
+        android:name="com.zicen.jetpackdemo.ui.my.MyFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
 </navigation>

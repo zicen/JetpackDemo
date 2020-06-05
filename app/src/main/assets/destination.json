@@ -1,11 +1,11 @@
 {
-  "main/tabs/dashboard": {
+  "main/tabs/sofa": {
     "isFragment": true,
     "asStarter": false,
     "needLogin": false,
-    "pageUrl": "main/tabs/dashboard",
-    "className": "com.zicen.jetpackdemo.ui.dashboard.DashboardFragment",
-    "id": 124201031
+    "pageUrl": "main/tabs/sofa",
+    "className": "com.zicen.jetpackdemo.ui.sofa.SofaFragment",
+    "id": 1553862811
   },
   "main/tabs/home": {
     "isFragment": true,
@@ -15,12 +15,28 @@
     "className": "com.zicen.jetpackdemo.ui.home.HomeFragment",
     "id": 1942336101
   },
-  "main/tabs/notification": {
+  "main/tabs/publish": {
+    "isFragment": false,
+    "asStarter": false,
+    "needLogin": false,
+    "pageUrl": "main/tabs/publish",
+    "className": "com.zicen.jetpackdemo.ui.publish.PublishActivity",
+    "id": 1648512252
+  },
+  "main/tabs/find": {
     "isFragment": true,
     "asStarter": false,
     "needLogin": false,
-    "pageUrl": "main/tabs/notification",
-    "className": "com.zicen.jetpackdemo.ui.notifications.NotificationsFragment",
-    "id": 2119905775
+    "pageUrl": "main/tabs/find",
+    "className": "com.zicen.jetpackdemo.ui.find.FindFragment",
+    "id": 323058213
+  },
+  "main/tabs/my": {
+    "isFragment": true,
+    "asStarter": false,
+    "needLogin": false,
+    "pageUrl": "main/tabs/my",
+    "className": "com.zicen.jetpackdemo.ui.my.MyFragment",
+    "id": 759450811
   }
 }

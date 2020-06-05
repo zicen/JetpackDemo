@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
 
 android {
     compileSdkVersion 28
@@ -33,6 +34,10 @@ android {
     }
 }
 
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.appcompat:appcompat:1.0.2'
@@ -41,15 +46,17 @@ dependencies {
     implementation 'androidx.navigation:navigation-fragment:2.0.0'
     implementation 'androidx.navigation:navigation-ui:2.0.0'
     implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
-
+    implementation 'com.alibaba:fastjson:1.1.71.android'
     implementation project(':libnavannotation')
-    //如果你使用kotlin,这里需要使用 kapt project
-    annotationProcessor project(":libnavcompiler")
-    compile "androidx.core:core-ktx:+"
-    compile "androidx.lifecycle:lifecycle-viewmodel-ktx:2.0.0"
+    // 如果你使用kotlin,这里需要使用(apply plugin: 'kotlin-kapt' & kapt project) 否则是 (annotationProcessor project)
+    kapt project(":libnavcompiler")
+    implementation "androidx.core:core-ktx:+"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.0.0"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
 repositories {
